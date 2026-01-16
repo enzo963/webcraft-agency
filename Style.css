@@ -1,0 +1,259 @@
+* {
+    font-family: 'Arial', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #007BFF;
+    --primary-color: #f1f1f1;
+    --secondery-color: #F8F9FA;
+    --shadow-color: rgba(0,0,0,0.1)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--secondery-color);
+}
+
+.header {
+    padding: 20px 10px;
+    background: #fff;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 90%;
+    margin: auto;
+}
+
+
+.header h2 {
+    color: var(--main-color);
+    margin: 0;
+    font-size: 24px;
+}
+
+.header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap : 20px
+}
+
+
+.header li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*** Hero Section Start***/
+
+.hero {
+    background: var(--main-color);
+    padding: 100px;
+    color: #fff;
+    text-align:center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 17px;
+    margin: 20px 0 35px ;
+    color: rgb(183, 230, 230);
+}
+
+
+.btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: #fff;
+    color : var(--main-color);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+/*** Hero Section End***/
+
+
+
+/*** Features Section Start***/
+
+.features {
+    padding: 100px; 
+    text-align: center;
+    background: #fff;
+    
+}
+
+
+
+.features .grid div{
+    background-color: #fff;
+    padding: 35px 15px;
+    box-shadow: 2px 2px 10px var(--shadow-color);
+    border-radius: 5px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.features .grid div h3{
+    color: var(--main-color);
+}
+
+.features .grid div p{
+    font-size: 13px;
+    
+
+}
+/** Features Section End***/
+
+
+
+
+/** Clint Section Start***/
+
+.reviews {
+    background-color: var(--secondery-color);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.reviews .flex-parent {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-parent img  {
+    width : 50px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: var(--shadow-color);
+}
+.reviews h2 {
+    margin-bottom: 40px;
+}
+
+.flex-parent div {
+    background: #fff;
+    padding: 20px;
+    margin: 0 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    flex: 1;
+    width: 30px;
+}
+
+
+.flex-parent div h4 {
+    color: var(--main-color);
+}
+
+
+/** Clint Section End***/
+
+/** Our Works Start***/
+.our-works {
+    text-align: center;
+    padding: 100px 0;
+    background: #fff;
+}
+
+.our-works h2 {
+    margin-bottom: 40px;
+}
+
+.ourworks-gird {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    max-width: 1100px;      
+    margin: 0 auto;         
+
+    gap: 20px;              
+    justify-items: stretch; 
+}
+
+.ourworks-gird img {
+    width: 100%;            
+    max-width: 480px;       
+    height: auto;
+    box-shadow: 2px 2px 10px rgb(67, 55, 55);
+    border-radius: 35px;
+    transition: transform 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+                           /*** cubic-bezier(x1,   y1,   x2, y2) ***/
+}
+
+
+.ourworks-gird img:nth-child(3) {
+    max-width: 520px;
+}
+
+.ourworks-gird img:nth-child(4) {
+    max-width: 500px;
+}
+
+.ourworks-gird img:nth-child(5) {
+    transform: translateY(10px);
+}
+
+.ourworks-gird img:nth-child(1) {
+    transform: translateX(-100px);
+}
+
+.ourworks-gird img:nth-child(3) {
+    transform: translateX(100px);
+}
+.ourworks-gird img:nth-child(4) {
+    transform: translateX(-100px);
+}
+
+.ourworks-gird img:nth-child(6) {
+    transform: translateX(100px);
+}
+.ourworks-gird img:nth-child(7) {
+    transform: translate(10px);
+}
+
+
+.ourworks-gird img:hover {
+    transform: scale(1.1);
+}
+/*** Our Works End***/
+
+.pricing {
+    display: flex;
+    
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.btn-choose {
+    text-decoration: none;
+
+}
+
+
+
